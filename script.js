@@ -101,3 +101,15 @@ function startPromiseChain() {
       }, 3000);
     });
   }
+    const button = document.getElementById("my-button");
+    const loading = document.getElementById("loading");
+
+    button.addEventListener("click", function() {
+      loading.style.display = "block";
+      loading.style.alignContent="center";
+      // Your code to perform the loading action goes here...
+      setTimeout(function() {
+        loading.style.display = "none";
+        // Your code to handle the loaded data goes here...
+      }, 1500); // Simulate a 2 second loading delay
+    });
